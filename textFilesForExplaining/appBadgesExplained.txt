@@ -1,0 +1,16 @@
+There are sevens apps images in the apps page and four of them have a red circular badge positioned in the top right corner of the app. When the app is hovered the red circle badge increases in size: this is done with the use of two separate images referenced from the spritesheet. 
+
+The following is an explanation of how the badges are positioned: the normal badge, small, and the on hover badge, large.
+
+Each app has a different ID and with the use of that ID, a child selector, '>' and the .badge class, each individual app's badge positioning is achieved. 
+
+An example would be: '#app>.badge'. The .badge class is in a div contained within a li: the div is a child of the li. The .badge div is set with a size of the smaller red circle image, 30px * 30px and it is positioned absolute. The positions are top -15px and right -15px, which places the center of the small red cicrle image over the corner point of the main app image (which is underneath) - the negative figures are half the size of the small red image.
+
+In order to position the text, which is a number, within the small red cicrle and have it centered, it is given a text-align center and a padding-top of 5px.
+
+The next part of the explanation is when the hover effect takes place. Within the css of the hover a larger image is referenced as the background image, which has a size of 60px * 60px. As a result of a larger red circular image being referenced it is necessary to also change the top and right positions: they are negative figues half the size of the images -30px and -30px. As well as changing the top and right positions it is also necessary to change the padding-top, which is increased by 15px to 20px.
+
+The final aspect of using a larger image on hover is that it will need a z-index of say 10px, in order that it appears above any other main app image that it may overlap with.
+
+
+ 

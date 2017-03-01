@@ -1,0 +1,12 @@
+I have used an image from iconfinder, which is the chain image on the home page.
+URL reference:
+https://www.iconfinder.com/icons/62913/chain_link_seo_tags_icon#size=40
+
+I created the background image for the back of the sideMenu from online-image-editor.
+URL reference
+https://www.online-image-editor.com/
+
+The 2 fonts that I have downloaded are from fontSqirrel
+http://www.fontsquirrel.com/
+
+I have checked the webpages in firefox and google chrome

@@ -1,0 +1,13 @@
+The layout explaination focuses on the two important areas, which are the sideMenu and the mainContent. The requirement is to have a fixed sideMenu of 200px and a variably changing mainContent, which changes its size dependent on the browser viewport size. 
+
+The sideMenu is set with and fixed width of 200px and it is placed after the mainContent divs (inner and outer) in the html files. The names that i gave to the two divs which are used for the main content are: outerMain and mainContent - mainContent is nested within outerMain.
+
+The outerMain div is floated right, given a left-margin of -200px (the same width of the sideMenu) and also given a width of 100%. The negative margin brings the left margin in from the left.
+
+The mainContent div is the inner div and does not need to be floated. Its width is set to auto and it is given a left-margin of 200px, which a positive margin.
+
+A combination of using two divs for the right side column, where the main content is displayed allows a variable width to be obtained and also allows the positioning of the sideMenu on the left of the main content.
+
+The sideMenu is floated right and as it is placed after the other two main content divs it will seek out the space created for it by the use of the inner and outer div and the use of a positive and negative margin.
+
+There is a related aspect to the two columns effect and that is how the background is displayed when the content height of the two columns changes. The solution is to set a container div background to white with an image repeated vertically from top left. This will give the illusion that the sideMenu continues its horizontal drop down the left side of the page. 

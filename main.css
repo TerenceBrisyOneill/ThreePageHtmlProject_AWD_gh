@@ -1,0 +1,337 @@
+body{
+margin:0;
+padding:0;
+font-family:tahoma, sans-serif;
+}
+/*font used for the mainContent h1 and anchors in side menu */
+@font-face {
+font-family:KaushanScript;
+src:url(fontSqirrelAssets/KaushanScript-Regular.otf);
+}
+/*font used for title h1*/
+@font-face {
+font-family:Blogger_Sans;
+src:url(fontSqirrelAssets/Blogger_Sans-Bold.otf);
+}
+
+/*------------CONTAINER-----------*/
+#container{
+	width:auto;
+	height:auto;
+	background:url(images/sideMenuBackground.png)#fff repeat-y left;
+}
+/*-----------END CONTAINER---------*/
+
+/*------------BEGIN HEADER---------*/
+header {
+position:relative;
+width:auto;
+min-height:150px;
+background:#f5a439;
+padding-top:30px;
+}
+header h1{
+font-family:Blogger_Sans, sans-serif;
+font-size:90px;
+margin:0 auto;
+text-align:center;
+}
+/*The 'header div' is the 'updated-text' container positioned top-right in header*/
+/*The red triangle is an image from the spritesheet*/
+header div {
+background:url(images/spritesheet.png) no-repeat; 
+background-position:-775px -5px; 
+text-align:right;
+padding-top:10px;
+padding-right:12px;
+color:white;
+font-style:bold;
+font-size:20px;
+position:absolute;
+top:0;
+right:0;
+width:198px;
+height:70px;
+}
+/*--------------END HEADER----------------*/
+
+/*-------------------BEGINS MAIN CONTENT FOR ALL PAGES: INDEX, APPS AND GALLERY----------------*/
+
+#outerMain{
+float:right;
+margin-left:-200px;
+width:100%;
+}
+#mainContent{
+background:#fff;
+margin-left:200px;
+width:auto;
+}
+/*----------------BEGIN HOME PAGE------------------*/
+#mainContent h1 {
+font-family:KaushanScript, sans-serif;
+}
+#mainContent h1,#mainContent p{
+margin-left:20px;
+}
+#chain p a{
+padding:3px 45px 3px 0;
+background:url(images/chain.png)no-repeat right;
+}
+/*----------------END HOME PAGE------------------*/
+
+/*------------BEGIN APPS PAGE------------*/
+/*'.apps' class = UL ON APPS PAGE*/
+.apps  {
+padding:0;
+max-width:365px;
+margin:20px auto;
+}
+.apps li{
+position:relative;
+list-style-type:none;
+display:inline-block;
+margin-left:15px;
+margin-top:10px;
+}
+/*Using css2 immediate child selector '>' for all app images*/
+/*The background image is specific for this '.icon' class */
+.App {
+/* also sets the width on icon and caption @ 100px*/
+width:100px;
+}
+/*BEGIN ID 'app'*/
+/*ID 'app' = 1st app image (1 from 7)*/
+#app>.icon{
+/*The background image is specific for this '.icon' class */
+background:url(images/spritesheet.png)no-repeat;
+background-position:-5px -5px;
+height:103px;
+}
+/*badge = red circle top right corner*/
+#app>.badge{
+background:url(images/spritesheet.png)no-repeat;
+background-position:-115px -5px;
+width:30px;
+height:30px;
+position:absolute;
+top:-15px;
+right:-15px;
+color:#fff;
+text-align:center;
+padding-top:5px;
+}
+/*caption = text below app image*/
+#app>.caption{
+text-align:center;
+}
+/*END ID app*/
+
+/*BEGIN ID 'linkedin'*/
+/*ID 'linkedin' = 2nd app image (2 from 7)*/
+#linkedin>.icon{
+background:url(images/spritesheet.png)no-repeat;
+background-position:-555px -5px;
+height:100px;
+}
+#linkedin>.caption{
+text-align:center;
+}
+/*END ID 'linkedin'*/
+
+/*BEGIN ID 'google'*/
+/*ID 'google' = 3rd app image (3 from 7)*/
+#google>.icon{
+background:url(images/spritesheet.png)no-repeat;
+background-position:-335px -5px;
+height:100px;
+}
+#google>.badge{
+background:url(images/spritesheet.png)no-repeat;
+background-position:-115px -5px;
+width:30px;
+height:30px;
+position:absolute;
+top:-15px;
+right:-15px;
+color:#fff;
+text-align:center;
+padding-top:5px;
+}
+#google>.caption{
+text-align:center;
+}
+/*END ID 'linkedin'*/
+
+/*BEGIN ID 'googleplus'*/
+/*ID 'googleplus' = 4th app image (4 from 7)*/
+#googleplus>.icon{
+background:url(images/spritesheet.png)no-repeat;
+background-position:-445px -5px;
+height:100px;
+}
+#googleplus>.badge{
+background:url(images/spritesheet.png)no-repeat;
+background-position:-115px -5px;
+width:30px;
+height:30px;
+position:absolute;
+top:-15px;
+right:-15px;
+color:#fff;
+text-align:center;
+padding-top:5px;
+}
+#googleplus>.caption{
+text-align:center;
+}
+/*END ID 'googleplus'*/
+
+
+/*BEGIN ID 'vkontakte'*/
+/*ID 'vkontakte' = 5th app image (5 from 7)*/
+#vkontakte>.icon{
+background:url(images/spritesheet.png)no-repeat;
+background-position:-995px -5px;
+height:100px;
+}
+#vkontakte>.caption{
+text-align:center;
+}
+/*END ID 'vkontakte'*/
+
+/*BEGIN ID 'photoshop'*/
+/*ID 'photoshop' = 6th app image (6 from 7)*/
+#photoshop>.icon{
+background:url(images/spritesheet.png)no-repeat;
+background-position:-665px -5px;
+height:103px;
+}
+#photoshop>.caption{
+text-align:center;
+}
+/*END ID 'photoshop'*/
+
+/*BEGIN ID 'blog'*/
+/*ID 'blog' = 7th app image (7 from 7)*/
+#blog>.icon{
+background:url(images/spritesheet.png)no-repeat;
+background-position:-445px -5px;
+height:100px;
+}
+#blog>.badge{
+background:url(images/spritesheet.png)no-repeat;
+background-position:-115px -5px;
+width:30px;
+height:30px;
+position:absolute;
+top:-15px;
+right:-15px;
+color:#fff;
+text-align:center;
+padding-top:5px;
+}
+#blog>.caption{
+text-align:center;
+}
+/*END ID 'blog'*/
+
+/*Four of the apps have a red circle badge*/
+/*app, google, googleplus and blog when hovered the badge increases size: a change from a small sprite image to a larger one*/
+#app:hover#app>.badge,#google:hover#google>.badge,#googleplus:hover#googleplus>.badge,#blog:hover#blog>.badge{
+background:url(images/spritesheet.png)no-repeat;
+background-position:-155px -5px;
+width:60px;
+height:60px;
+position:absolute;
+top:-30px;
+right:-30px;
+padding-top:20px;
+z-index:10;
+}
+/*----------------ENDS APPS PAGE---------------------*/
+
+/*----------------GALLERY PAGE-----------------------*/
+#galleryimages li{
+margin:20px auto;
+text-align:center;
+list-style-type:none;
+}
+#galleryimages li>div{
+display:inline-block;
+padding:20px 20px 0;
+border:1px solid #222;
+}
+#galleryimages li div>img{
+background:#fff;
+vertical-align:bottom;
+}
+#galleryimages li div>div{
+display:block;
+text-align:right;
+margin:10px 0;
+background:#fff;
+}
+/*-------------END GALLERY PAGE--------------------*/
+
+/*--------------------------ENDS MAIN CONTENT FOR ALL PAGES: INDEX, APPS AND GALLERY----------------------------*/
+
+/*-------------BEGIN SIDE MENU----------------------*/
+#sideMenu{
+float:right;
+width:200px;
+height:100%;
+background:#e0d174;
+}
+#sideMenu ul {
+margin:0 auto;
+padding:0;
+}
+#sideMenu ul li {
+list-style-type:none;
+background:#e0d174;
+height:45px;
+padding-top:15px;
+border-bottom:1px solid gray;
+text-align:center;
+}
+#sideMenu ul li:hover{
+background:#fff74a;
+}
+#sideMenu ul li a{
+font-family:KaushanScript, sans-serif;
+font-size:25px;
+text-decoration:none;
+color:#000;
+/*used to set all of anchor as clickable*/
+display:block;
+}
+/*sets the white triangle on background when the page is active*/
+#sideMenu ul li.background{
+background:#e0d174 url(images/white-triangle.png)no-repeat right;
+}
+/*-----------------END SIDE MENU-----------------*/
+
+/*-----------------BEGINS FOOTER-----------------*/
+footer{
+clear:both;
+width:auto;
+min-height:60px;
+background:gray;
+padding:1px;
+}
+footer ul{
+margin:20px auto;
+text-align:center;
+}
+footer ul li{
+display:inline-block;
+margin:5px auto;
+list-style:none;
+}
+footer ul li a{
+color:#fff;
+text-decoration:none;
+margin-left:20px;
+}
+/*------------------ENDS FOOTER-------------------*/

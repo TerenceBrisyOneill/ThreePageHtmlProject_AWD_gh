@@ -1,0 +1,11 @@
+I have used the tag selector 'header div' to select and position the div that containes a background image of a red triangle that is on all the pages within the main header.
+
+The positioning is done to the div contained in the header and it is positioned absolute: top:0; and right:0;. the width of the div matches the width of the red triangle, 210px (initially, but this is changed to allow the positioning of the divs text, 'updated'). 
+
+In order to get the text within the div positioned correctly I have used text-align right and then used padding-right of 12px: this places the text in a central position to the background image, rather than central to the div itself.
+
+As a consequence of using padding-right within the div it is necessary to reduce the width of the div by the same value of pixels. The div is then reduced to 198px from its original 210px.
+
+The use of padding-top is also necessary so that the text is centered vertically, padding-top:10px.
+
+The actual red traingle image is sourced from the spritesheet and referenced by its location on that sheet.
